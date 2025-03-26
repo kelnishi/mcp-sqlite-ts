@@ -5,4 +5,5 @@ A Model Context Protocol (MCP) server for SQLite interactions. This server allow
 ## Installation
 
 ```bash
-npm install -g mcp-sqlite-server
+npx mcp-sqlite-server ./sqlite.db
+```
