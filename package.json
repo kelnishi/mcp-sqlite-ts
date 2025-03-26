@@ -1,0 +1,32 @@
+{
+  "name": "mcp-sqlite-server",
+  "version": "0.1.0",
+  "description": "MCP SQLite Server for interactive database access",
+  "main": "dist/server.js",
+  "bin": {
+    "mcp-sqlite-server": "./bin/mcp-sqlite-server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "sqlite",
+    "database",
+    "model-context-protocol"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.17.0"
+  }
+}
